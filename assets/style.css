@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --header-color: rgb(50, 57, 103);
+    --background-color: black;
+    --font-color: white;
+    --card-color: rgb(76, 90, 182);
+    --main-font-family: 'Courier New', Courier, monospace;
+    --card-border-color: maroon; 
+}
+
+body {
+    font-family: var(--main-font-family);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    background: var(--background-color);
+    color: var(--font-color);
+}
+
+header {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--header-color);
+    color: var(--font-color);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    flex: 0 auto;
+    padding: 8 px; 
+    margin-top: 50px;
+    background-color: var(--card-color);
+    border-radius: 8px;
+}
+
+.card-results {
+    border: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin:auto;
+    padding: 20px;
+    width: 25vw;
+    height: 400px;
+    font-size: 1.5em;
+    text-align:center;
+}
+
+.large-font-blanks {
+    border: 1px solid var(--card-border-color);
+    border-radius: 10px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin:auto;
+    padding: 20px;
+    width: 55vw;
+    height: 400px;
+    font-size: 3.5em;
+    text-align:center;
+}
+
+button {
+background-color: turquoise;
+width: 10vw
+}
+
+.card-timer {
+    border-color: var(--card-border-color);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    height: 240px;
+}
